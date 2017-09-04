@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		0957F5DCF39864B96A332CFB /* libPods-RYFrame.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6821847C4CADD16DD2F5C70C /* libPods-RYFrame.a */; };
+		4B19ADD51F4FE95900DE580D /* Student+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B19ADD21F4FE95900DE580D /* Student+CoreDataProperties.m */; };
+		4B19ADD61F4FE95900DE580D /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B19ADD41F4FE95900DE580D /* Student.m */; };
+		4B44A7531F53BA1D007311EB /* RYCoreDataManage.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B44A7521F53BA1D007311EB /* RYCoreDataManage.m */; };
+		4B44A7561F53E17C007311EB /* classModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B44A7551F53E17C007311EB /* classModel.m */; };
 		4BFC3A471F4E98F5000EE6E3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BFC3A461F4E98F5000EE6E3 /* main.m */; };
 		4BFC3A4A1F4E98F5000EE6E3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BFC3A491F4E98F5000EE6E3 /* AppDelegate.m */; };
 		4BFC3A4D1F4E98F5000EE6E3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BFC3A4C1F4E98F5000EE6E3 /* ViewController.m */; };
@@ -18,6 +22,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4B19ADD11F4FE95900DE580D /* Student+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Student+CoreDataProperties.h"; sourceTree = "<group>"; };
+		4B19ADD21F4FE95900DE580D /* Student+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Student+CoreDataProperties.m"; sourceTree = "<group>"; };
+		4B19ADD31F4FE95900DE580D /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
+		4B19ADD41F4FE95900DE580D /* Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
+		4B44A7511F53BA1D007311EB /* RYCoreDataManage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RYCoreDataManage.h; sourceTree = "<group>"; };
+		4B44A7521F53BA1D007311EB /* RYCoreDataManage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RYCoreDataManage.m; sourceTree = "<group>"; };
+		4B44A7541F53E17C007311EB /* classModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = classModel.h; sourceTree = "<group>"; };
+		4B44A7551F53E17C007311EB /* classModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = classModel.m; sourceTree = "<group>"; };
 		4BFC3A421F4E98F5000EE6E3 /* RYFrame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RYFrame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BFC3A461F4E98F5000EE6E3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4BFC3A481F4E98F5000EE6E3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -129,6 +141,12 @@
 		4BFC3A621F4E9C53000EE6E3 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				4B19ADD11F4FE95900DE580D /* Student+CoreDataProperties.h */,
+				4B19ADD21F4FE95900DE580D /* Student+CoreDataProperties.m */,
+				4B19ADD31F4FE95900DE580D /* Student.h */,
+				4B19ADD41F4FE95900DE580D /* Student.m */,
+				4B44A7541F53E17C007311EB /* classModel.h */,
+				4B44A7551F53E17C007311EB /* classModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -157,6 +175,8 @@
 		4BFC3A671F4E9C88000EE6E3 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				4B44A7511F53BA1D007311EB /* RYCoreDataManage.h */,
+				4B44A7521F53BA1D007311EB /* RYCoreDataManage.m */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -204,6 +224,18 @@
 				TargetAttributes = {
 					4BFC3A411F4E98F5000EE6E3 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = A323YWLZSV;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+							com.apple.DataProtection = {
+								enabled = 0;
+							};
+							com.apple.Maps.iOS = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -298,9 +330,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				4BFC3A4D1F4E98F5000EE6E3 /* ViewController.m in Sources */,
+				4B19ADD51F4FE95900DE580D /* Student+CoreDataProperties.m in Sources */,
 				4BFC3A4A1F4E98F5000EE6E3 /* AppDelegate.m in Sources */,
+				4B44A7531F53BA1D007311EB /* RYCoreDataManage.m in Sources */,
 				4BFC3A531F4E98F6000EE6E3 /* RYFrame.xcdatamodeld in Sources */,
 				4BFC3A471F4E98F5000EE6E3 /* main.m in Sources */,
+				4B44A7561F53E17C007311EB /* classModel.m in Sources */,
+				4B19ADD61F4FE95900DE580D /* Student.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,11 +449,14 @@
 			baseConfigurationReference = F7DE60C7F84E7A9BF298C292 /* Pods-RYFrame.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = RYFrame/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.RYFrame;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -426,11 +465,14 @@
 			baseConfigurationReference = B499679FA4CE734B80A4E212 /* Pods-RYFrame.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = RYFrame/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.RYFrame;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

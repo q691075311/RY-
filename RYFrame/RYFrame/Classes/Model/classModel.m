@@ -10,4 +10,14 @@
 
 @implementation classModel
 
+- (instancetype)init{
+    self = [super init];
+    if (self) {
+        self.name = @"袁心刚";
+        self.age = @(35);
+        self.iD = @(13);
+    }
+    return self;
+}
+
 @end

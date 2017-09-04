@@ -10,4 +10,11 @@
 
 @interface classModel : NSObject
 
+@property (nonatomic,copy) NSString *name;
+
+@property (nonatomic,strong) NSNumber *age;
+
+@property (nonatomic,strong) NSNumber *iD;
+
+- (instancetype)init;
 @end

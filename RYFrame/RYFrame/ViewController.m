@@ -11,6 +11,9 @@
 #import <CoreData/CoreData.h>
 #import "RYCoreDataManage.h"
 #import "classModel.h"
+#import <objc/runtime.h>
+
+
 @interface ViewController ()
 @property (nonatomic,strong) NSManagedObjectContext *coreDataManageContext;
 @end
@@ -41,8 +44,16 @@
 //    Student * st = [[RYCoreDataManage shareCoreManage] coreDataQueryDataWithEntityName:@"Student" withPredicate:@"name"][0];
 //    NSArray * arr = [[RYCoreDataManage shareCoreManage] coreDataQueryDataWithEntityName:@"Student" withConditions:@"肯定" withValue:@"name"];
 //    NSLog(@"%@",((Student * )arr[0]).name);
+    NSString *class = @"class";
+    const char *className = [class cStringUsingEncoding:NSASCIIStringEncoding];
+    Class newClass = objc_getClass(className);
     
+    id destinationViewController = [[newClass alloc] init];
+    id destinationViewController1 = [[newClass alloc] init];
     
+//    NSString * newstring = @"eeee";
+//    char *new = [newstring cStringUsingEncoding:NSASCIIStringEncoding];
+//    Class new1 = object_getClassName(new);
 }
 
 - (void)didReceiveMemoryWarning {

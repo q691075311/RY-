@@ -9,9 +9,21 @@
 #ifndef PrefixHeader_pch
 #define PrefixHeader_pch
 
+//保证DEBUG模式先有log输出  release模式下没有
+#ifndef __OPTIMIZE__
+#define NSLog(...) NSLog(__VA_ARGS__)
+#else
+#define NSLog(...) {}
+#endif
+
+
 // Include any system framework and library headers here that should be included in all compilation units.
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
 #import "ViewController.h"
+#import "RYTool.h"
+#import "UIColor+RY.h"
+
+
 
 
 #endif /* PrefixHeader_pch */

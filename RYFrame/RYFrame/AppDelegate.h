@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "RYCoreDataManage.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 

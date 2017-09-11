@@ -7,11 +7,6 @@
 //
 
 #import "ViewController.h"
-#import "Student.h"
-#import <CoreData/CoreData.h>
-#import "RYCoreDataManage.h"
-#import "classModel.h"
-#import <objc/runtime.h>
 #import "RYFMDBManager.h"
 #import "FMDB.h"
 
@@ -23,7 +18,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-//    NSLog(@"%@",NSHomeDirectory());
+    NSLog(@"%@",NSHomeDirectory());
 //    _coreDataManageContext = [RYCoreDataManage shareCoreManage].managedObjectContext;
     // Do any additional setup after loading the view, typically from a nib.
     
@@ -57,11 +52,12 @@
 //    Class new1 = object_getClassName(new);
     
     RYFMDBManager * dbm = [RYFMDBManager shareFMDBManager];
-//    [dbm insertDate];
-//    [dbm transaction];
+    [dbm insertDate];
+    [dbm transaction];
     [dbm queryTableDate];
-    
-    
+    UIView * view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 200, 200)];
+    view.backgroundColor = [UIColor ry_colorWithHexString:@"#FFFF00"];
+    [self.view addSubview:view];
     
     
 }

@@ -29,6 +29,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>SDCycleScrollView.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>SDWebImage.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -47,7 +52,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>73B103977A80D61C803C6BB83887A53B</key>
+		<key>7863AC19A5E120A41A2539E214DFC8ED</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -62,7 +67,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>96E0235EB25C6FBEFE59D81351569F5E</key>
+		<key>94DC485E35D9110DBE226990FAEA4D44</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -72,7 +77,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C79509F8268DCD1EC695DF48557E5121</key>
+		<key>A8F5A5325D599BD256E450C8DC2D38BE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F44CAB310F30DE5AEC9DFC6364A1B7AE</key>
 		<dict>
 			<key>primary</key>
 			<true/>

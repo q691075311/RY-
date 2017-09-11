@@ -62,8 +62,6 @@
     [dbm queryTableDate];
     
     
-    [UIScreen mainScreen].bounds.size.height;
-    
     
     
 }

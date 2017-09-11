@@ -12,6 +12,8 @@
 		4B19ADD61F4FE95900DE580D /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B19ADD41F4FE95900DE580D /* Student.m */; };
 		4B44A7531F53BA1D007311EB /* RYCoreDataManage.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B44A7521F53BA1D007311EB /* RYCoreDataManage.m */; };
 		4B44A7561F53E17C007311EB /* classModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B44A7551F53E17C007311EB /* classModel.m */; };
+		4BA85B1D1F5E53C900A3B09E /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BA85B1C1F5E53C900A3B09E /* libsqlite3.0.tbd */; };
+		4BA85B201F5E54A600A3B09E /* RYFMDBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BA85B1F1F5E54A600A3B09E /* RYFMDBManager.m */; };
 		4BFC3A471F4E98F5000EE6E3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BFC3A461F4E98F5000EE6E3 /* main.m */; };
 		4BFC3A4A1F4E98F5000EE6E3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BFC3A491F4E98F5000EE6E3 /* AppDelegate.m */; };
 		4BFC3A4D1F4E98F5000EE6E3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BFC3A4C1F4E98F5000EE6E3 /* ViewController.m */; };
@@ -22,6 +24,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4B01BEA81F6266CF00DA390C /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		4B01BEA91F62696F00DA390C /* RYPublic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RYPublic.h; sourceTree = "<group>"; };
 		4B19ADD11F4FE95900DE580D /* Student+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Student+CoreDataProperties.h"; sourceTree = "<group>"; };
 		4B19ADD21F4FE95900DE580D /* Student+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Student+CoreDataProperties.m"; sourceTree = "<group>"; };
 		4B19ADD31F4FE95900DE580D /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
@@ -30,6 +34,9 @@
 		4B44A7521F53BA1D007311EB /* RYCoreDataManage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RYCoreDataManage.m; sourceTree = "<group>"; };
 		4B44A7541F53E17C007311EB /* classModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = classModel.h; sourceTree = "<group>"; };
 		4B44A7551F53E17C007311EB /* classModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = classModel.m; sourceTree = "<group>"; };
+		4BA85B1C1F5E53C900A3B09E /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		4BA85B1E1F5E54A600A3B09E /* RYFMDBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RYFMDBManager.h; sourceTree = "<group>"; };
+		4BA85B1F1F5E54A600A3B09E /* RYFMDBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RYFMDBManager.m; sourceTree = "<group>"; };
 		4BFC3A421F4E98F5000EE6E3 /* RYFrame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RYFrame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BFC3A461F4E98F5000EE6E3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4BFC3A481F4E98F5000EE6E3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BA85B1D1F5E53C900A3B09E /* libsqlite3.0.tbd in Frameworks */,
 				0957F5DCF39864B96A332CFB /* libPods-RYFrame.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -61,6 +69,7 @@
 		2C70C456FBCC60AEB957859B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4BA85B1C1F5E53C900A3B09E /* libsqlite3.0.tbd */,
 				6821847C4CADD16DD2F5C70C /* libPods-RYFrame.a */,
 			);
 			name = Frameworks;
@@ -100,6 +109,7 @@
 				4BFC3A541F4E98F6000EE6E3 /* Assets.xcassets */,
 				4BFC3A561F4E98F6000EE6E3 /* LaunchScreen.storyboard */,
 				4BFC3A591F4E98F6000EE6E3 /* Info.plist */,
+				4B01BEA81F6266CF00DA390C /* PrefixHeader.pch */,
 				4BFC3A511F4E98F5000EE6E3 /* RYFrame.xcdatamodeld */,
 				4BFC3A451F4E98F5000EE6E3 /* Supporting Files */,
 			);
@@ -168,6 +178,7 @@
 		4BFC3A661F4E9C6A000EE6E3 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				4B01BEA91F62696F00DA390C /* RYPublic.h */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -177,6 +188,8 @@
 			children = (
 				4B44A7511F53BA1D007311EB /* RYCoreDataManage.h */,
 				4B44A7521F53BA1D007311EB /* RYCoreDataManage.m */,
+				4BA85B1E1F5E54A600A3B09E /* RYFMDBManager.h */,
+				4BA85B1F1F5E54A600A3B09E /* RYFMDBManager.m */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -279,6 +292,9 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-RYFrame/Pods-RYFrame-resources.sh",
 				"${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
+				"${PODS_ROOT}/XRCarouselView/XRCarouselView/XRPlaceholder.png",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
@@ -331,6 +347,7 @@
 			files = (
 				4BFC3A4D1F4E98F5000EE6E3 /* ViewController.m in Sources */,
 				4B19ADD51F4FE95900DE580D /* Student+CoreDataProperties.m in Sources */,
+				4BA85B201F5E54A600A3B09E /* RYFMDBManager.m in Sources */,
 				4BFC3A4A1F4E98F5000EE6E3 /* AppDelegate.m in Sources */,
 				4B44A7531F53BA1D007311EB /* RYCoreDataManage.m in Sources */,
 				4BFC3A531F4E98F6000EE6E3 /* RYFrame.xcdatamodeld in Sources */,
@@ -451,6 +468,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/RYFrame/PrefixHeader.pch";
 				INFOPLIST_FILE = RYFrame/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -467,6 +486,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/RYFrame/PrefixHeader.pch";
 				INFOPLIST_FILE = RYFrame/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

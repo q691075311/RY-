@@ -22,7 +22,6 @@ static RYCoreDataManage *_coreDataManage;
     dispatch_once(&onceToken, ^{
         _coreDataManage = [[RYCoreDataManage alloc] init];
     });
-    
     return _coreDataManage;
 }
 - (void)coreDataAddDataWithTableName:(NSString *)tableName WithObject:(id)object{

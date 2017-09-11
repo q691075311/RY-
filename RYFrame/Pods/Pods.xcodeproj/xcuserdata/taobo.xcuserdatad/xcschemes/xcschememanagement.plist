@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>AFNetworking.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>FMDB.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -14,7 +19,27 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>MJRefresh.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-RYFrame.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SDWebImage.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SVProgressHUD.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>XRCarouselView.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -22,6 +47,21 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>04CF549EBEEE7BC87AEAE35397184D94</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>54C30B3151DD107F2DDB4B1117D71167</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6AA590F19627B38F2D2B982A2671EF22</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>8642CC820CE8C5B88C113D7F47AF4BC3</key>
 		<dict>
 			<key>primary</key>
@@ -32,7 +72,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>F331213902ABFEAB79CEF5B285C73003</key>
+		<key>9E033EDB5EC0819481B0546434FA577B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BA2AF3E006B2A2BAE973713815B2D5A0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F42816F71154ECED2EA4B04F79595504</key>
 		<dict>
 			<key>primary</key>
 			<true/>

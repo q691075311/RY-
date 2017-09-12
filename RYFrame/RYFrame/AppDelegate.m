@@ -18,7 +18,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    MainController * mainVC = [[MainController alloc] init];
+    MainController * mainVC = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"MainController"];
     UINavigationController * nav = [[UINavigationController alloc] initWithRootViewController:mainVC];
     self.window.rootViewController = nav;
     return YES;

@@ -17,10 +17,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [self app_FirstLaunch];
     
-    MainController * mainVC = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"MainController"];
-    UINavigationController * nav = [[UINavigationController alloc] initWithRootViewController:mainVC];
-    self.window.rootViewController = nav;
     return YES;
 }
 
@@ -46,4 +44,10 @@
     // Saves changes in the application's managed object context before the application terminates.
 }
 
+#pragma mark -- app第一次启动
+- (void)app_FirstLaunch{
+    MainController * mainVC = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"MainController"];
+    UINavigationController * nav = [[UINavigationController alloc] initWithRootViewController:mainVC];
+    self.window.rootViewController = nav;
+}
 @end

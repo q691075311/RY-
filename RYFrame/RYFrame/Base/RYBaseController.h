@@ -7,12 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "RYNavBar.h"
 @interface RYBaseController : UIViewController
 /**
  *  存储界面的值
  */
 @property (nonatomic,strong) NSDictionary * info;
 
+/**
+ *  导航栏的View
+ */
+@property (nonatomic,strong) RYNavBar * navBar;
 
 @end

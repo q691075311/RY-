@@ -19,7 +19,9 @@
 
 // Include any system framework and library headers here that should be included in all compilation units.
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
-#import "ViewController.h"
+//UI框架
+#import <UIKit/UIKit.h>
+//工具类
 #import "RYTool.h"
 #import "UIColor+RY.h"
 

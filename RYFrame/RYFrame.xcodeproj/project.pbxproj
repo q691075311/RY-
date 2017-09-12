@@ -9,12 +9,15 @@
 /* Begin PBXBuildFile section */
 		0957F5DCF39864B96A332CFB /* libPods-RYFrame.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6821847C4CADD16DD2F5C70C /* libPods-RYFrame.a */; };
 		4B1449151F662F5B000F544A /* RYTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B1449141F662F5B000F544A /* RYTool.m */; };
-		4B14491B1F667049000F544A /* UIColor+RY.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B14491A1F667049000F544A /* UIColor+RY.m */; };
+		4B5F1AEF1F67AFB400A9918F /* UIColor+RY.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B5F1AEE1F67AFB400A9918F /* UIColor+RY.m */; };
+		4B5F1AF21F67AFF300A9918F /* RYNavBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B5F1AF11F67AFF300A9918F /* RYNavBar.m */; };
+		4B5F1AF41F67B00E00A9918F /* RYNavBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B5F1AF31F67B00E00A9918F /* RYNavBar.xib */; };
 		4BA85B1D1F5E53C900A3B09E /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BA85B1C1F5E53C900A3B09E /* libsqlite3.0.tbd */; };
 		4BA85B201F5E54A600A3B09E /* RYFMDBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BA85B1F1F5E54A600A3B09E /* RYFMDBManager.m */; };
+		4BE9B7011F676BE000DBFF67 /* RYBaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BE9B7001F676BE000DBFF67 /* RYBaseController.m */; };
+		4BE9B7041F67842B00DBFF67 /* MainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BE9B7031F67842B00DBFF67 /* MainController.m */; };
 		4BFC3A471F4E98F5000EE6E3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BFC3A461F4E98F5000EE6E3 /* main.m */; };
 		4BFC3A4A1F4E98F5000EE6E3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BFC3A491F4E98F5000EE6E3 /* AppDelegate.m */; };
-		4BFC3A4D1F4E98F5000EE6E3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BFC3A4C1F4E98F5000EE6E3 /* ViewController.m */; };
 		4BFC3A501F4E98F5000EE6E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BFC3A4E1F4E98F5000EE6E3 /* Main.storyboard */; };
 		4BFC3A551F4E98F6000EE6E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BFC3A541F4E98F6000EE6E3 /* Assets.xcassets */; };
 		4BFC3A581F4E98F6000EE6E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BFC3A561F4E98F6000EE6E3 /* LaunchScreen.storyboard */; };
@@ -25,17 +28,22 @@
 		4B01BEA91F62696F00DA390C /* RYPublic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RYPublic.h; sourceTree = "<group>"; };
 		4B1449131F662F5B000F544A /* RYTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RYTool.h; sourceTree = "<group>"; };
 		4B1449141F662F5B000F544A /* RYTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RYTool.m; sourceTree = "<group>"; };
-		4B1449191F667049000F544A /* UIColor+RY.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+RY.h"; sourceTree = "<group>"; };
-		4B14491A1F667049000F544A /* UIColor+RY.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+RY.m"; sourceTree = "<group>"; };
+		4B5F1AED1F67AFB400A9918F /* UIColor+RY.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+RY.h"; sourceTree = "<group>"; };
+		4B5F1AEE1F67AFB400A9918F /* UIColor+RY.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+RY.m"; sourceTree = "<group>"; };
+		4B5F1AF01F67AFF300A9918F /* RYNavBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RYNavBar.h; sourceTree = "<group>"; };
+		4B5F1AF11F67AFF300A9918F /* RYNavBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RYNavBar.m; sourceTree = "<group>"; };
+		4B5F1AF31F67B00E00A9918F /* RYNavBar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RYNavBar.xib; sourceTree = "<group>"; };
 		4BA85B1C1F5E53C900A3B09E /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		4BA85B1E1F5E54A600A3B09E /* RYFMDBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RYFMDBManager.h; sourceTree = "<group>"; };
 		4BA85B1F1F5E54A600A3B09E /* RYFMDBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RYFMDBManager.m; sourceTree = "<group>"; };
+		4BE9B6FF1F676BE000DBFF67 /* RYBaseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RYBaseController.h; sourceTree = "<group>"; };
+		4BE9B7001F676BE000DBFF67 /* RYBaseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RYBaseController.m; sourceTree = "<group>"; };
+		4BE9B7021F67842B00DBFF67 /* MainController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainController.h; sourceTree = "<group>"; };
+		4BE9B7031F67842B00DBFF67 /* MainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainController.m; sourceTree = "<group>"; };
 		4BFC3A421F4E98F5000EE6E3 /* RYFrame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RYFrame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BFC3A461F4E98F5000EE6E3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4BFC3A481F4E98F5000EE6E3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4BFC3A491F4E98F5000EE6E3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		4BFC3A4B1F4E98F5000EE6E3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		4BFC3A4C1F4E98F5000EE6E3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		4BFC3A4F1F4E98F5000EE6E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4BFC3A541F4E98F6000EE6E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4BFC3A571F4E98F6000EE6E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -67,6 +75,18 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		4BE9B7051F67903300DBFF67 /* UITool */ = {
+			isa = PBXGroup;
+			children = (
+				4B5F1AED1F67AFB400A9918F /* UIColor+RY.h */,
+				4B5F1AEE1F67AFB400A9918F /* UIColor+RY.m */,
+				4B5F1AF01F67AFF300A9918F /* RYNavBar.h */,
+				4B5F1AF11F67AFF300A9918F /* RYNavBar.m */,
+				4B5F1AF31F67B00E00A9918F /* RYNavBar.xib */,
+			);
+			path = UITool;
+			sourceTree = "<group>";
+		};
 		4BFC3A391F4E98F5000EE6E3 = {
 			isa = PBXGroup;
 			children = (
@@ -95,8 +115,8 @@
 				4BFC3A601F4E9A31000EE6E3 /* Resource */,
 				4BFC3A481F4E98F5000EE6E3 /* AppDelegate.h */,
 				4BFC3A491F4E98F5000EE6E3 /* AppDelegate.m */,
-				4BFC3A4B1F4E98F5000EE6E3 /* ViewController.h */,
-				4BFC3A4C1F4E98F5000EE6E3 /* ViewController.m */,
+				4BE9B7021F67842B00DBFF67 /* MainController.h */,
+				4BE9B7031F67842B00DBFF67 /* MainController.m */,
 				4BFC3A4E1F4E98F5000EE6E3 /* Main.storyboard */,
 				4BFC3A541F4E98F6000EE6E3 /* Assets.xcassets */,
 				4BFC3A561F4E98F6000EE6E3 /* LaunchScreen.storyboard */,
@@ -166,8 +186,7 @@
 				4B01BEA91F62696F00DA390C /* RYPublic.h */,
 				4B1449131F662F5B000F544A /* RYTool.h */,
 				4B1449141F662F5B000F544A /* RYTool.m */,
-				4B1449191F667049000F544A /* UIColor+RY.h */,
-				4B14491A1F667049000F544A /* UIColor+RY.m */,
+				4BE9B7051F67903300DBFF67 /* UITool */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -177,6 +196,8 @@
 			children = (
 				4BA85B1E1F5E54A600A3B09E /* RYFMDBManager.h */,
 				4BA85B1F1F5E54A600A3B09E /* RYFMDBManager.m */,
+				4BE9B6FF1F676BE000DBFF67 /* RYBaseController.h */,
+				4BE9B7001F676BE000DBFF67 /* RYBaseController.m */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -264,6 +285,7 @@
 			files = (
 				4BFC3A581F4E98F6000EE6E3 /* LaunchScreen.storyboard in Resources */,
 				4BFC3A551F4E98F6000EE6E3 /* Assets.xcassets in Resources */,
+				4B5F1AF41F67B00E00A9918F /* RYNavBar.xib in Resources */,
 				4BFC3A501F4E98F5000EE6E3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -331,9 +353,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B14491B1F667049000F544A /* UIColor+RY.m in Sources */,
-				4BFC3A4D1F4E98F5000EE6E3 /* ViewController.m in Sources */,
+				4BE9B7011F676BE000DBFF67 /* RYBaseController.m in Sources */,
+				4B5F1AEF1F67AFB400A9918F /* UIColor+RY.m in Sources */,
+				4B5F1AF21F67AFF300A9918F /* RYNavBar.m in Sources */,
 				4BA85B201F5E54A600A3B09E /* RYFMDBManager.m in Sources */,
+				4BE9B7041F67842B00DBFF67 /* MainController.m in Sources */,
 				4BFC3A4A1F4E98F5000EE6E3 /* AppDelegate.m in Sources */,
 				4B1449151F662F5B000F544A /* RYTool.m in Sources */,
 				4BFC3A471F4E98F5000EE6E3 /* main.m in Sources */,

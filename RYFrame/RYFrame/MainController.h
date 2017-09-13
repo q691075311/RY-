@@ -9,7 +9,14 @@
 #import "RYBaseController.h"
 #import "RYNavBar.h"
 @interface MainController : RYBaseController
-//导航栏View
+/**
+ 导航栏View
+ */
 @property (nonatomic,strong) RYNavBar * ryNavBar;
+
+/**
+ 界面的数据
+ */
+@property (nonatomic,strong) NSDictionary * ryInfo;
 
 @end

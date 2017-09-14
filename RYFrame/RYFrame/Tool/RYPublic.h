@@ -9,9 +9,9 @@
 #ifndef RYPublic_h
 #define RYPublic_h
 //屏幕的宽度
-#define SCREENWIDTH [UIScreen mainScreen].bounds.size.width
+#define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
 //屏幕的高度
-#define SCREENHEIGHT [UIScreen mainScreen].bounds.size.height
+#define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
 
 
 

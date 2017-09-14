@@ -29,6 +29,7 @@
         ryView.autoresizingMask = self.autoresizingMask;
         ryView.alpha = self.alpha;
         ryView.hidden = self.hidden;
+        return ryView;
     }
     return self;
 }

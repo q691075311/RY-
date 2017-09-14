@@ -159,6 +159,7 @@ typedef NS_ENUM(NSUInteger, AFHTTPRequestQueryStringSerializationStyle) {
 /**
  Creates and returns a serializer with default configuration.
  */
+//我们使用AFHTTPRequestSerializer对HTTP请求的头部进行处理，首先调用这个玩意儿进行初始化
 + (instancetype)serializer;
 
 /**
@@ -167,6 +168,7 @@ typedef NS_ENUM(NSUInteger, AFHTTPRequestQueryStringSerializationStyle) {
  @param field The HTTP header to set a default value for
  @param value The value set as default for the specified header, or `nil`
  */
+//添加请求头
 - (void)setValue:(nullable NSString *)value
 forHTTPHeaderField:(NSString *)field;
 
@@ -177,6 +179,7 @@ forHTTPHeaderField:(NSString *)field;
 
  @return The value set as default for the specified header, or `nil`
  */
+//添加请求头
 - (nullable NSString *)valueForHTTPHeaderField:(NSString *)field;
 
 /**
@@ -185,12 +188,14 @@ forHTTPHeaderField:(NSString *)field;
  @param username The HTTP basic auth username
  @param password The HTTP basic auth password
  */
+//设置Auth认证用户名和密码
 - (void)setAuthorizationHeaderFieldWithUsername:(NSString *)username
                                        password:(NSString *)password;
 
 /**
  Clears any existing value for the "Authorization" HTTP header.
  */
+//清除Auth认证用户名和密码
 - (void)clearAuthorizationHeader;
 
 ///-------------------------------------------------------
@@ -234,6 +239,7 @@ forHTTPHeaderField:(NSString *)field;
 
  @return An `NSMutableURLRequest` object.
  */
+//发起HTTP请求，下面几个方法是根据设置的请求头的不同，调用不同的方法
 - (NSMutableURLRequest *)requestWithMethod:(NSString *)method
                                  URLString:(NSString *)URLString
                                 parameters:(nullable id)parameters

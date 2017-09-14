@@ -23,6 +23,7 @@
 #import <UIKit/UIKit.h>
 //工具类
 #import "RYTool.h"
+#import "RYPublic.h"
 #import "UIColor+RY.h"
 
 

@@ -65,6 +65,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  Creates and returns a serializer with default configuration.
  */
+//初始化AFURLResponseSerialization
 + (instancetype)serializer;
 
 ///-----------------------------------------
@@ -94,6 +95,7 @@ NS_ASSUME_NONNULL_BEGIN
 
  @return `YES` if the response is valid, otherwise `NO`.
  */
+
 - (BOOL)validateResponse:(nullable NSHTTPURLResponse *)response
                     data:(nullable NSData *)data
                    error:(NSError * _Nullable __autoreleasing *)error;
@@ -112,6 +114,7 @@ NS_ASSUME_NONNULL_BEGIN
  - `text/json`
  - `text/javascript`
  */
+//处理返回为JSON的数据
 @interface AFJSONResponseSerializer : AFHTTPResponseSerializer
 
 - (instancetype)init;
@@ -124,6 +127,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  Whether to remove keys with `NSNull` values from response JSON. Defaults to `NO`.
  */
+//如果设置了`removesKeysWithNullValues=YES`时,递归的方式处理value为null的情况
 @property (nonatomic, assign) BOOL removesKeysWithNullValues;
 
 /**
@@ -190,6 +194,7 @@ NS_ASSUME_NONNULL_BEGIN
 
  - `application/x-plist`
  */
+//处理返回为plist的数据
 @interface AFPropertyListResponseSerializer : AFHTTPResponseSerializer
 
 - (instancetype)init;
@@ -233,6 +238,7 @@ NS_ASSUME_NONNULL_BEGIN
  - `image/x-xbitmap`
  - `image/x-win-bitmap`
  */
+//处理返回为image的数据
 @interface AFImageResponseSerializer : AFHTTPResponseSerializer
 
 #if TARGET_OS_IOS || TARGET_OS_TV || TARGET_OS_WATCH

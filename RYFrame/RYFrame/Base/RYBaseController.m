@@ -10,7 +10,11 @@
 
 @implementation RYBaseController
 
-
+- (void)viewDidLoad{
+    [super viewDidLoad];
+    self.navBar = [[RYNavBar alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 64)];
+    [self.view addSubview:self.navBar];
+}
 
 
 

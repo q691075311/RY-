@@ -14,6 +14,7 @@
 		4B5F1AF41F67B00E00A9918F /* RYNavBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B5F1AF31F67B00E00A9918F /* RYNavBar.xib */; };
 		4BA85B1D1F5E53C900A3B09E /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BA85B1C1F5E53C900A3B09E /* libsqlite3.0.tbd */; };
 		4BA85B201F5E54A600A3B09E /* RYFMDBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BA85B1F1F5E54A600A3B09E /* RYFMDBManager.m */; };
+		4BAFF9631F6A2A8100B88DA6 /* RYBaseRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BAFF9621F6A2A8100B88DA6 /* RYBaseRequest.m */; };
 		4BE9B7011F676BE000DBFF67 /* RYBaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BE9B7001F676BE000DBFF67 /* RYBaseController.m */; };
 		4BE9B7041F67842B00DBFF67 /* MainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BE9B7031F67842B00DBFF67 /* MainController.m */; };
 		4BFC3A471F4E98F5000EE6E3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BFC3A461F4E98F5000EE6E3 /* main.m */; };
@@ -36,6 +37,8 @@
 		4BA85B1C1F5E53C900A3B09E /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		4BA85B1E1F5E54A600A3B09E /* RYFMDBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RYFMDBManager.h; sourceTree = "<group>"; };
 		4BA85B1F1F5E54A600A3B09E /* RYFMDBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RYFMDBManager.m; sourceTree = "<group>"; };
+		4BAFF9611F6A2A8100B88DA6 /* RYBaseRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RYBaseRequest.h; sourceTree = "<group>"; };
+		4BAFF9621F6A2A8100B88DA6 /* RYBaseRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RYBaseRequest.m; sourceTree = "<group>"; };
 		4BE9B6FF1F676BE000DBFF67 /* RYBaseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RYBaseController.h; sourceTree = "<group>"; };
 		4BE9B7001F676BE000DBFF67 /* RYBaseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RYBaseController.m; sourceTree = "<group>"; };
 		4BE9B7021F67842B00DBFF67 /* MainController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainController.h; sourceTree = "<group>"; };
@@ -176,6 +179,8 @@
 		4BFC3A641F4E9C6A000EE6E3 /* NetWork */ = {
 			isa = PBXGroup;
 			children = (
+				4BAFF9611F6A2A8100B88DA6 /* RYBaseRequest.h */,
+				4BAFF9621F6A2A8100B88DA6 /* RYBaseRequest.m */,
 			);
 			path = NetWork;
 			sourceTree = "<group>";
@@ -356,6 +361,7 @@
 				4BE9B7011F676BE000DBFF67 /* RYBaseController.m in Sources */,
 				4B5F1AEF1F67AFB400A9918F /* UIColor+RY.m in Sources */,
 				4B5F1AF21F67AFF300A9918F /* RYNavBar.m in Sources */,
+				4BAFF9631F6A2A8100B88DA6 /* RYBaseRequest.m in Sources */,
 				4BA85B201F5E54A600A3B09E /* RYFMDBManager.m in Sources */,
 				4BE9B7041F67842B00DBFF67 /* MainController.m in Sources */,
 				4BFC3A4A1F4E98F5000EE6E3 /* AppDelegate.m in Sources */,

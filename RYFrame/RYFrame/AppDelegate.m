@@ -17,8 +17,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    //app第一次登陆
     [self app_FirstLaunch];
-    
+    //判断网络状态
+    [RYBaseRequest judgeNetworkChange];
     return YES;
 }
 
@@ -48,6 +50,7 @@
 - (void)app_FirstLaunch{
     MainController * mainVC = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"MainController"];
     UINavigationController * nav = [[UINavigationController alloc] initWithRootViewController:mainVC];
+    nav.navigationBarHidden = YES;
     self.window.rootViewController = nav;
 }
 @end

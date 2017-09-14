@@ -13,6 +13,6 @@
 //屏幕的高度
 #define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
 
-
+#define BaseURL @"http://m.funqu.cn/d/"
 
 #endif /* RYPublic_h */

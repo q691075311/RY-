@@ -299,6 +299,7 @@ forHTTPHeaderField:(NSString *)field;
 
  @return `YES` if the file data was successfully appended, otherwise `NO`.
  */
+//根据URL路径上传
 - (BOOL)appendPartWithFileURL:(NSURL *)fileURL
                          name:(NSString *)name
                         error:(NSError * _Nullable __autoreleasing *)error;
@@ -343,6 +344,8 @@ forHTTPHeaderField:(NSString *)field;
  @param fileName The filename to be associated with the specified data. This parameter must not be `nil`.
  @param mimeType The MIME type of the specified data. (For example, the MIME type for a JPEG image is image/jpeg.) For a list of valid MIME types, see http://www.iana.org/assignments/media-types/. This parameter must not be `nil`.
  */
+
+//通过工程中的文件上传
 - (void)appendPartWithFileData:(NSData *)data
                           name:(NSString *)name
                       fileName:(NSString *)fileName

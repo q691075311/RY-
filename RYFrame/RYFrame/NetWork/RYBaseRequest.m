@@ -96,7 +96,7 @@ constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
               fail(error);
           }];
 }
-
+#pragma mark -- 创建一个下载任务
 + (NSURLSessionDownloadTask *)downloadFileWithURL:(NSString *)URLStr
                                      withFileName:(NSString *)fileName
                                      withProgress:(RYProgress)progress

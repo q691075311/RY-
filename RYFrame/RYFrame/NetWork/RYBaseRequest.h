@@ -45,7 +45,7 @@ typedef void(^RYDownLoadFilePath)(NSURL * filePathURL);//文件下载完成后�
  */
 + (void)post_withURL:(NSString *)URLStr
           withParams:(NSDictionary *)params
-   withRequestHeads:(NSDictionary *)heads
+    withRequestHeads:(NSDictionary *)heads
         withProgress:(RYProgress)progress
          withSuccess:(RYRequestSuccess)success
             withFail:(RYRequestFail)fail;

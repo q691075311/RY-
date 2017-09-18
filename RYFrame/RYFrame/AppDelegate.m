@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "MainController.h"
+#import "IQKeyboardManager.h"
 @interface AppDelegate ()
 
 @end
@@ -21,6 +22,9 @@
     [self app_FirstLaunch];
     //判断网络状态
     [RYBaseRequest judgeNetworkChange];
+    //初始化IQKeyboardManager
+    [self configIQKeyBoardManager];
+    
     return YES;
 }
 
@@ -52,5 +56,11 @@
     UINavigationController * nav = [[UINavigationController alloc] initWithRootViewController:mainVC];
     nav.navigationBarHidden = YES;
     self.window.rootViewController = nav;
+}
+- (void)configIQKeyBoardManager{
+    IQKeyboardManager * keyBoardManager = [IQKeyboardManager sharedManager];
+    keyBoardManager.enable = YES;
+    keyBoardManager.shouldResignOnTouchOutside = YES; //控制点击背景是否收起键盘
+    keyBoardManager.enableAutoToolbar = NO; // 控制是否显示键盘上的工具条
 }
 @end

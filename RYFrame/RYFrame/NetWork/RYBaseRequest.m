@@ -81,6 +81,10 @@ constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
     [formData appendPartWithFileURL:fileURL
                                name:fileName
                               error:&appendError];
+//    [formData appendPartWithFileData:<#(nonnull NSData *)#>
+//                                name:<#(nonnull NSString *)#>
+//                            fileName:<#(nonnull NSString *)#>
+//                            mimeType:<#(nonnull NSString *)#>];
     if (appendError) {
         [SVProgressHUD showErrorWithStatus:@"文件路径添加失败"];
         return;

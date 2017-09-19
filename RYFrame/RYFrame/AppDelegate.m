@@ -21,7 +21,7 @@
     //app第一次登陆
     [self app_FirstLaunch];
     //判断网络状态
-    [RYBaseRequest judgeNetworkChange];
+    [[RYBaseRequest shareManager] judgeNetworkChange];
     //初始化IQKeyboardManager
     [self configIQKeyBoardManager];
     

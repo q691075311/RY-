@@ -8,7 +8,7 @@
 
 #import "MainController.h"
 
-@interface MainController ()
+@interface MainController ()<RYBaseRequestDelegate>
 @property (nonatomic,strong) NSURLSessionDownloadTask * downTask;
 @property (nonatomic,assign) BOOL is;
 @end
@@ -44,11 +44,11 @@
 //                       withFail:^(NSError *error) {
 //                           NSLog(@"失败数据%@",error);
 //                       }];
-    
-    _downTask = [RYBaseRequest downloadFileWithURL:@"http://sw.bos.baidu.com/sw-search-sp/software/f9d83c7730dce/QQ_mac_6.0.1.dmg"
+    [RYBaseRequest shareManager].delegate = self;
+    _downTask = [[RYBaseRequest shareManager] downloadFileWithURL:@"http://sw.bos.baidu.com/sw-search-sp/software/f9d83c7730dce/QQ_mac_6.0.1.dmg"
                                       withFileName:@"QQ.dmg"
                                       withProgress:^(NSProgress *progress) {
-                                          NSLog(@"%@",progress);
+//                                          NSLog(@"%@",progress);
                                       }
                                withSuccessFilePath:^(NSURL *filePathURL) {
                                    NSLog(@"成功的地址：%@",filePathURL);
@@ -58,6 +58,9 @@
                                           }];
     
     
+}
+- (void)getWorkingProgress:(NSProgress *)progress{
+    NSLog(@"%@",progress);
 }
 - (IBAction)downOrPause:(UIButton *)sender {
     if (_is == YES) {

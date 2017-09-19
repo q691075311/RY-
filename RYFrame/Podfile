@@ -7,4 +7,5 @@ pod 'MJRefresh'
 pod 'SVProgressHUD'
 pod 'SDCycleScrollView'
 pod 'AFNetworking'
+pod 'YYCache'
 end

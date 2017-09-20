@@ -21,6 +21,9 @@
     NSURL *documentsDirectoryURL = [[NSFileManager defaultManager] URLForDirectory:NSDocumentDirectory inDomain:NSUserDomainMask appropriateForURL:nil create:NO error:nil];
     NSLog(@"%@",documentsDirectoryURL);
     _is = YES;
+    YYCache * cache = [[YYCache alloc] initWithName:@"RYCache"];
+    
+    
 //    [RYBaseRequest get_withURL:@"http://192.168.99.122:8080/Bookkeeping/user/showView"
 //                    withParams:nil
 //                  withProgress:^(NSProgress *progress) {
@@ -32,30 +35,33 @@
 //                      withFail:^(NSError *error) {
 //                          NSLog(@"失败数据%@",error);
 //                      }];
-//    [RYBaseRequest post_withURL:@"phone/product/bannerList"
-//                     withParams:nil
-//               withRequestHeads:nil
-//                   withProgress:^(NSProgress *progress) {
-//                       
-//                   }
-//                    withSuccess:^(id responseObject) {
-//                        NSLog(@"成功数据%@",responseObject);
-//                    }
-//                       withFail:^(NSError *error) {
-//                           NSLog(@"失败数据%@",error);
-//                       }];
-    [RYBaseRequest shareManager].delegate = self;
-    _downTask = [[RYBaseRequest shareManager] downloadFileWithURL:@"http://sw.bos.baidu.com/sw-search-sp/software/f9d83c7730dce/QQ_mac_6.0.1.dmg"
-                                      withFileName:@"QQ.dmg"
-                                      withProgress:^(NSProgress *progress) {
-//                                          NSLog(@"%@",progress);
-                                      }
-                               withSuccessFilePath:^(NSURL *filePathURL) {
-                                   NSLog(@"成功的地址：%@",filePathURL);
-                               }
-                                          withFail:^(NSError *error) {
-                                              NSLog(@"%@",error);
-                                          }];
+    
+    [[RYBaseRequest shareManager] post_withURL:POST_URL
+                     withParams:nil
+               withRequestHeads:nil
+                   withProgress:^(NSProgress *progress) {
+                       
+                   }
+                    withSuccess:^(id responseObject) {
+                        NSLog(@"成功数据%@",responseObject);
+                        [cache containsObjectForKey:POST_URL];
+                        [cache setObject:responseObject forKey:POST_URL];
+                    }
+                       withFail:^(NSError *error) {
+                           NSLog(@"失败数据%@",error);
+                       }];
+//    [RYBaseRequest shareManager].delegate = self;
+//    _downTask = [[RYBaseRequest shareManager] downloadFileWithURL:@"http://sw.bos.baidu.com/sw-search-sp/software/f9d83c7730dce/QQ_mac_6.0.1.dmg"
+//                                      withFileName:@"QQ.dmg"
+//                                      withProgress:^(NSProgress *progress) {
+////                                          NSLog(@"%@",progress);
+//                                      }
+//                               withSuccessFilePath:^(NSURL *filePathURL) {
+//                                   NSLog(@"成功的地址：%@",filePathURL);
+//                               }
+//                                          withFail:^(NSError *error) {
+//                                              NSLog(@"%@",error);
+//                                          }];
     
     
 }

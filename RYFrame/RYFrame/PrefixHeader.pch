@@ -28,5 +28,17 @@
 #import "AFNetworking.h"
 #import "RYBaseRequest.h"
 #import "SVProgressHUD.h"
+//数据缓存类
+#import "YYCache.h"
+
+
+
+
+
+
+
+
+
+
 
 #endif /* PrefixHeader_pch */

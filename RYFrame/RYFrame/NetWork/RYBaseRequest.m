@@ -12,6 +12,8 @@
 
 @interface RYBaseRequest ()
 
+
+
 @end
 
 @implementation RYBaseRequest
@@ -146,6 +148,14 @@ constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
                               }];
     return downTask;
 }
+#pragma mark -- 初始化YYCache
+- (YYCache *)yyCache{
+    if (!_yyCache) {
+        _yyCache = [[YYCache alloc] initWithName:@"RYCache"];
+    }
+    return _yyCache;
+}
+
 #pragma mark -- 创建文件的下载路径
 - (NSURL *)createFileDownPathWithFileName:(NSString *)fileName{
     //获取dcuments目录
@@ -171,13 +181,17 @@ constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
                                                          options:NSJSONReadingMutableContainers
                                                            error:&JSONError];
     if (!JSONError) {//尝试解析数据，如果解析不成功，就直接返回responseObject
-        //根据服务端判断JSON中Code的值
+        //根据服务端判断JSON中Code的值  如果code成功就处理缓存
+        
         return dic;
     }
     NSLog(@"解析JSON数据失败");
     return responseObject;
 }
-
+//#pragma mark -- 利用YYCache缓存数据
+//- (void)handlingRequestCacheWithURL:(NSString *)url withResponseObject:(NSDictionary *)respDic{
+//    [_yyCache setObject:respDic forKey:url];
+//}
 #pragma mark -- 配置AFHTTPSessionManager
 - (AFHTTPSessionManager *)configurationAFHTTPSessionManager{
     //初始化并配置baseURL

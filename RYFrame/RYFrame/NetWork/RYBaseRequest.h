@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import "YYCache.h"
 @protocol RYBaseRequestDelegate <NSObject>
 
 - (void)getWorkingProgress:(NSProgress *)progress;
@@ -30,6 +30,17 @@ typedef void(^RYDownLoadFilePath)(NSURL * filePathURL);//文件下载完成后�
  网络状态
  */
 @property (nonatomic,assign) AFNetworkReachabilityStatus netWorkingStatus;
+
+/**
+ YYCache缓存
+ * 1.先加载缓存
+ * 2.判断有没有网络
+ * 3.如果没有网络则return
+ * 4.有网，则继续请求，然后刷新内容，刷新缓存
+ */
+@property (nonatomic,strong) YYCache * yyCache;
+
+
 + (RYBaseRequest *)shareManager;
 
 /**

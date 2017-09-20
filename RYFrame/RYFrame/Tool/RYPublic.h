@@ -14,5 +14,7 @@
 #define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
 
 #define BaseURL @"http://m.funqu.cn/d/"
+#define POST_URL @"phone/product/bannerList"
+
 
 #endif /* RYPublic_h */

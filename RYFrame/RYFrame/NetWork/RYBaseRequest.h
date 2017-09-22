@@ -9,13 +9,13 @@
 #import <Foundation/Foundation.h>
 #import "YYCache.h"
 @protocol RYBaseRequestDelegate <NSObject>
-
+//获取网络的进度
 - (void)getWorkingProgress:(NSProgress *)progress;
 
 @end
 
 typedef void(^RYRequestSuccess)(id responseObject);//请求成功的Block
-typedef void(^RYRequestFail)(NSError * error);//请求失败的Block
+typedef void(^RYRequestFail)(NSError * error,NSDictionary * dic);//请求失败的Block
 typedef void(^RYProgress)(NSProgress * progress);//请求的进度
 typedef void(^RYDownLoadFilePath)(NSURL * filePathURL);//文件下载完成后的路径
 

@@ -42,10 +42,10 @@
             progress(downloadProgress);
         }
          success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-             success([self parsingJSONResponseObject:responseObject]);
+             success([self parsingJSONResponseObject:responseObject withURL:URLStr]);
          }
          failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-             fail(error);
+             fail(error,nil);
          }];
      
 }
@@ -66,10 +66,12 @@
              progress(uploadProgress);
          }
           success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-              success([self parsingJSONResponseObject:responseObject]);
+              //判断返回内容并做缓存
+              success([self parsingJSONResponseObject:responseObject withURL:URLStr]);
           }
           failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-              fail(error);
+              
+              fail(error,nil);
           }];
 }
 #pragma mark -- 通过POST用文件路径上传文件
@@ -106,10 +108,10 @@ constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
              progress(uploadProgress);
          }
           success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-              success([self parsingJSONResponseObject:responseObject]);
+              success([self parsingJSONResponseObject:responseObject withURL:URLStr]);
           }
           failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-              fail(error);
+              fail(error,nil);
           }];
 }
 #pragma mark -- 创建一个下载任务
@@ -141,7 +143,7 @@ constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
                                     }
                               completionHandler:^(NSURLResponse * _Nonnull response, NSURL * _Nullable filePath, NSError * _Nullable error) {
                                   if (error) {
-                                      fail(error);
+                                      fail(error,nil);
                                   }else{
                                       success(filePath);
                                   }
@@ -175,23 +177,23 @@ constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
     }
 }
 #pragma mark -- 解析JSON数据
-- (id)parsingJSONResponseObject:(id)responseObject{
+- (id)parsingJSONResponseObject:(id)responseObject withURL:(NSString *)url{
     NSError * JSONError;
     NSDictionary * dic = [NSJSONSerialization JSONObjectWithData:responseObject
                                                          options:NSJSONReadingMutableContainers
                                                            error:&JSONError];
     if (!JSONError) {//尝试解析数据，如果解析不成功，就直接返回responseObject
         //根据服务端判断JSON中Code的值  如果code成功就处理缓存
-        
+        [self handlingRequestCacheWithURL:url withResponseObject:dic];
         return dic;
     }
     NSLog(@"解析JSON数据失败");
     return responseObject;
 }
-//#pragma mark -- 利用YYCache缓存数据
-//- (void)handlingRequestCacheWithURL:(NSString *)url withResponseObject:(NSDictionary *)respDic{
-//    [_yyCache setObject:respDic forKey:url];
-//}
+#pragma mark -- 利用YYCache缓存数据
+- (void)handlingRequestCacheWithURL:(NSString *)url withResponseObject:(NSDictionary *)respDic{
+    [_yyCache setObject:respDic forKey:url];
+}
 #pragma mark -- 配置AFHTTPSessionManager
 - (AFHTTPSessionManager *)configurationAFHTTPSessionManager{
     //初始化并配置baseURL

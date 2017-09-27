@@ -78,6 +78,13 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		4B1414181F7B8A6A00086ABA /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
 		4B212B231F7B77DC00DAF3D8 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -142,11 +149,11 @@
 		4BFC3A441F4E98F5000EE6E3 /* RYFrame */ = {
 			isa = PBXGroup;
 			children = (
+				4B1414181F7B8A6A00086ABA /* Resource */,
 				4B212B231F7B77DC00DAF3D8 /* Classes */,
 				4BFC3A641F4E9C6A000EE6E3 /* NetWork */,
 				4BFC3A671F4E9C88000EE6E3 /* Base */,
 				4BFC3A661F4E9C6A000EE6E3 /* Tool */,
-				4BFC3A601F4E9A31000EE6E3 /* Resource */,
 				4BFC3A481F4E98F5000EE6E3 /* AppDelegate.h */,
 				4BFC3A491F4E98F5000EE6E3 /* AppDelegate.m */,
 				4BE9B7021F67842B00DBFF67 /* MainController.h */,
@@ -167,13 +174,6 @@
 				4BFC3A461F4E98F5000EE6E3 /* main.m */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		4BFC3A601F4E9A31000EE6E3 /* Resource */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Resource;
 			sourceTree = "<group>";
 		};
 		4BFC3A641F4E9C6A000EE6E3 /* NetWork */ = {

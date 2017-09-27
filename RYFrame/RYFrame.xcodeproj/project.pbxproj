@@ -78,6 +78,37 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		4B212B231F7B77DC00DAF3D8 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				4B212B241F7B77DC00DAF3D8 /* Controller */,
+				4B212B251F7B77DC00DAF3D8 /* Model */,
+				4B212B261F7B77DC00DAF3D8 /* View */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		4B212B241F7B77DC00DAF3D8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4B212B251F7B77DC00DAF3D8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4B212B261F7B77DC00DAF3D8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		4BE9B7051F67903300DBFF67 /* UITool */ = {
 			isa = PBXGroup;
 			children = (
@@ -111,7 +142,7 @@
 		4BFC3A441F4E98F5000EE6E3 /* RYFrame */ = {
 			isa = PBXGroup;
 			children = (
-				4BFC3A5F1F4E99CE000EE6E3 /* Classes */,
+				4B212B231F7B77DC00DAF3D8 /* Classes */,
 				4BFC3A641F4E9C6A000EE6E3 /* NetWork */,
 				4BFC3A671F4E9C88000EE6E3 /* Base */,
 				4BFC3A661F4E9C6A000EE6E3 /* Tool */,
@@ -138,42 +169,11 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		4BFC3A5F1F4E99CE000EE6E3 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				4BFC3A611F4E9C53000EE6E3 /* Controller */,
-				4BFC3A621F4E9C53000EE6E3 /* Model */,
-				4BFC3A631F4E9C53000EE6E3 /* View */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
 		4BFC3A601F4E9A31000EE6E3 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Resource;
-			sourceTree = "<group>";
-		};
-		4BFC3A611F4E9C53000EE6E3 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		4BFC3A621F4E9C53000EE6E3 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		4BFC3A631F4E9C53000EE6E3 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		4BFC3A641F4E9C6A000EE6E3 /* NetWork */ = {

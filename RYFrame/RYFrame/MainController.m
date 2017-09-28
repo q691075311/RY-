@@ -10,7 +10,7 @@
 
 @interface MainController ()<RYBaseRequestDelegate>
 @property (nonatomic,strong) NSURLSessionDownloadTask * downTask;
-@property (nonatomic,assign) BOOL is;
+
 @end
 
 @implementation MainController
@@ -20,8 +20,7 @@
 //    NSLog(@"%@",NSHomeDirectory());
     NSURL *documentsDirectoryURL = [[NSFileManager defaultManager] URLForDirectory:NSDocumentDirectory inDomain:NSUserDomainMask appropriateForURL:nil create:NO error:nil];
     NSLog(@"%@",documentsDirectoryURL);
-    _is = YES;
-    YYCache * cache = [[YYCache alloc] initWithName:@"RYCache"];
+//    YYCache * cache = [[YYCache alloc] initWithName:@"RYCache"];
     
     
 //    [RYBaseRequest get_withURL:@"http://192.168.99.122:8080/Bookkeeping/user/showView"
@@ -63,13 +62,13 @@
 //                                              NSLog(@"%@",error);
 //                                          }];
     
-    [[RYBaseRequest shareManager] get_withURL:@"https://weibo.com/xuezhiqian?from=myfollow_all&is_all=1#_rnd1505979011067" withParams:nil withProgress:^(NSProgress *progress) {
-        
-    } withSuccess:^(id responseObject) {
-        NSLog(@"%@",responseObject);
-    } withFail:^(NSError *error, NSDictionary *dic) {
-        
-    }];
+//    [[RYBaseRequest shareManager] get_withURL:@"https://weibo.com/xuezhiqian?from=myfollow_all&is_all=1#_rnd1505979011067" withParams:nil withProgress:^(NSProgress *progress) {
+//        
+//    } withSuccess:^(id responseObject) {
+//        NSLog(@"%@",responseObject);
+//    } withFail:^(NSError *error, NSDictionary *dic) {
+//        
+//    }];
     
     
     
@@ -77,14 +76,7 @@
 - (void)getWorkingProgress:(NSProgress *)progress{
     NSLog(@"%@",progress);
 }
-- (IBAction)downOrPause:(UIButton *)sender {
-    if (_is == YES) {
-        [_downTask resume];
-    }else{
-        [_downTask suspend];
-    }
-    _is = !_is;
-}
+
 
 
 @end

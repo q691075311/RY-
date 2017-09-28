@@ -130,7 +130,7 @@ typedef void(^RYDownLoadFilePath)(NSURL * filePathURL);//文件下载完成后�
  @param configurationAFHTTPSessionManager 返回的数据
  @return 解析出来的数据
  */
-- (id)parsingJSONResponseObject:(id)responseObject;
+//- (id)parsingJSONResponseObject:(id)responseObject;
 
 /**
  配置AFHTTPSessionManager

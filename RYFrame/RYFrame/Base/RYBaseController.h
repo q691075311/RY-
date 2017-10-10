@@ -19,4 +19,11 @@
  */
 @property (nonatomic,strong) RYNavBar * navBar;
 
+/**
+ 设置状态栏的颜色
+
+ @param color 
+ */
+- (void)setStatusBarBackgroundColor:(UIColor *)color;
+
 @end

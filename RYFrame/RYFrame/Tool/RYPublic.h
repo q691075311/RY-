@@ -12,6 +12,8 @@
 #define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
 //屏幕的高度
 #define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
+//顶部状态栏的高度
+#define TOPBAR_HEIGHT [UIApplication sharedApplication].statusBarFrame.size.height
 
 #define BaseURL @"http://m.funqu.cn/d/"
 #define POST_URL @"phone/product/bannerList"

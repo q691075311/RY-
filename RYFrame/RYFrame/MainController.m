@@ -20,6 +20,9 @@
 //    NSLog(@"%@",NSHomeDirectory());
     NSURL *documentsDirectoryURL = [[NSFileManager defaultManager] URLForDirectory:NSDocumentDirectory inDomain:NSUserDomainMask appropriateForURL:nil create:NO error:nil];
     NSLog(@"%@",documentsDirectoryURL);
+    [self setStatusBarBackgroundColor:[UIColor blueColor]];
+    
+    
 //    YYCache * cache = [[YYCache alloc] initWithName:@"RYCache"];
     
     

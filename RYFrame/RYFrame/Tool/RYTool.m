@@ -16,5 +16,15 @@
                                  attributes:@{NSFontAttributeName : [UIFont systemFontOfSize:fontSize]}
                                     context:nil].size.height;
 }
+#pragma mark -- userDefault存储值
++ (void)userDefaultsSetValue:(id)value forKey:(NSString *)key{
+    [NSUSERDEFAULTS setObject:value forKey:key];
+    [NSUSERDEFAULTS synchronize];
+}
+#pragma mark -- 移除userDefault对应key的值
++ (void)userDefaultsRemoveKey:(NSString *)key{
+    [NSUSERDEFAULTS removeObjectForKey:key];
+    [NSUSERDEFAULTS synchronize];
+}
 
 @end

@@ -7,6 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+//找到NSUserDefaults
+#define NSUSERDEFAULTS [NSUserDefaults standardUserDefaults]
 
 @interface RYTool : NSObject
 /**
@@ -19,5 +21,21 @@
  *  @return label的高度
  */
 + (CGFloat) getLabelHeightWithString:(NSString *)contentStr withLabelWidth:(CGFloat)width withFontSize:(CGFloat)fontSize;
+
+/**
+ userDefault存储值
+
+ @param value 存储的值
+ @param key 存储的key
+ */
++ (void)userDefaultsSetValue:(id)value forKey:(NSString *)key;
+
+/**
+ 移除userDefault对应key的值
+
+ @param key key
+ */
++ (void)userDefaultsRemoveKey:(NSString *)key;
+
 @end
 

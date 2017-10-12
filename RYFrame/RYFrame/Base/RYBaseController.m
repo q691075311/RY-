@@ -13,7 +13,6 @@
 - (void)viewDidLoad{
     [super viewDidLoad];
     self.navBar = [[RYNavBar alloc] initWithFrame:CGRectMake(0, TOPBAR_HEIGHT, SCREEN_WIDTH, 44)];
-//    [self setStatusBarBackgroundColor:[UIColor redColor]];
     [self.view addSubview:self.navBar];
 }
 #pragma mark -- 设置状态栏的颜色

@@ -17,11 +17,11 @@
 
 - (void)viewDidLoad{
     [super viewDidLoad];
-//    NSLog(@"%@",NSHomeDirectory());
+    NSLog(@"%@",NSHomeDirectory());
     NSURL *documentsDirectoryURL = [[NSFileManager defaultManager] URLForDirectory:NSDocumentDirectory inDomain:NSUserDomainMask appropriateForURL:nil create:NO error:nil];
     NSLog(@"%@",documentsDirectoryURL);
     [self setStatusBarBackgroundColor:[UIColor blueColor]];
-    
+    [RYTool userDefaultsSetValue:@"yes" forKey:@"key"];
     
 //    YYCache * cache = [[YYCache alloc] initWithName:@"RYCache"];
     
